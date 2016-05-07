@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j6P-GW-fya">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TradeMultiverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TK-Gf-M5q" customClass="GIDSignInButton">
+                                <rect key="frame" x="125" y="338" width="164" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="valueChanged" id="eCC-0U-JpQ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6TK-Gf-M5q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="274" id="7QK-6h-7fN"/>
+                            <constraint firstItem="6TK-Gf-M5q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BJa-un-E1n"/>
+                            <constraint firstItem="6TK-Gf-M5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="105" id="UsE-ab-XKb"/>
+                            <constraint firstItem="6TK-Gf-M5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yCZ-3E-oZt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign In" id="Xcw-4X-Itg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="signInButton" destination="6TK-Gf-M5q" id="8iN-4O-m0J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="302"/>
+        </scene>
+        <!--Protected Page-->
+        <scene sceneID="k4L-DS-odq">
+            <objects>
+                <viewController storyboardIdentifier="ProtectedPageViewController" id="mjB-sN-fGn" customClass="ProtectedPageViewController" customModule="TradeMultiverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nqz-Yb-yZA"/>
+                        <viewControllerLayoutGuide type="bottom" id="hZ4-OU-Fs8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vl3-W7-I7o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAZ-aY-Jtq">
+                                <rect key="frame" x="174" y="353" width="67" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonTapped:" destination="mjB-sN-fGn" eventType="touchUpInside" id="b5x-uO-RNY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAZ-aY-Jtq" firstAttribute="centerX" secondItem="vl3-W7-I7o" secondAttribute="centerX" id="c9y-5K-XoB"/>
+                            <constraint firstItem="rAZ-aY-Jtq" firstAttribute="top" secondItem="Nqz-Yb-yZA" secondAttribute="bottom" constant="289" id="dde-5R-Cnt"/>
+                            <constraint firstItem="rAZ-aY-Jtq" firstAttribute="leading" secondItem="vl3-W7-I7o" secondAttribute="leadingMargin" constant="154" id="kR8-jB-I12"/>
+                            <constraint firstItem="rAZ-aY-Jtq" firstAttribute="centerY" secondItem="vl3-W7-I7o" secondAttribute="centerY" id="zW7-1s-HJa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Protected Page" id="pOq-AG-BuR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XnC-ON-HbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079" y="302"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lyr-yX-i8O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j6P-GW-fya" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dv4-Aa-XA4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wds-Dj-WYM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vim-lK-ELW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="302"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iUg-Yt-tb3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iXy-gr-f09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2uo-sp-cY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mjB-sN-fGn" kind="relationship" relationship="rootViewController" id="4uZ-Nv-JU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdx-1d-4jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="302"/>
+        </scene>
+    </scenes>
+</document>

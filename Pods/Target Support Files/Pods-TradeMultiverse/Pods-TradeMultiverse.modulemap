@@ -1,0 +1,6 @@
+framework module Pods_TradeMultiverse {
+  umbrella header "Pods-TradeMultiverse-umbrella.h"
+
+  export *
+  module * { export * }
+}
